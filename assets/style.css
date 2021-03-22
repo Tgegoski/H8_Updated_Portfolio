@@ -1,117 +1,131 @@
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  /* div {
-    display: block;
-  } */
-  .header {
-      background-color:cadetblue;
-      color: white;
-      height: 150px;
-      padding: 30px;
-      display:flex;
-  }
-  
-  .header div {
-    padding-top: 80px;
-    margin-right: 10px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    color:white;
-  }
-  header h1 {
-    display: flex;
-    font-size: 48px;
-    float:left;
-  }
-  .header div ul {
-    list-style-type: none;
-    color:white;
-    float: right;
-  }
-  
-  .header div ul li {
-    display: flex;
-    margin-right: 25px;
-    float: right;
-    color:white;
-  }
-  
-  .image {
-    width: 100%;
-    background-image: url(.\assets\images\20201006_184519wilm20wd.jpg);
-    background-color: mediumpurple;
-    height: 500px;
-    background-position:100% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  /* .container {
-    width:100%;
-  } */
-  
-  /* .name {
-    text-align: left;
-    font-size: x-large;
-    text-size-adjust: 25%;
-  }
-  .nav-bar {
-    background-color: aquamarine;
-    color:grey;
-  
-  }
-  .nav {
-      text-align:right;
-      text-size-adjust: 75%;
-      font-size: large;
-  } */
-  
-  p {
-    font-size:larger;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:white;
-    background-color:thistle;
-    padding: 50px;
-    display:flex;
-    text-align: right;
-  }
-  
-  .column {
-      float: left;
-      padding: 15px;
-  }
-    
-  .clearfix::after {
-      content: "";
-      clear: both;
-      display: table;
-  }
-  
-  .menu {
-      width: 25%;
-  }
-    
-  .content {
-      width: 75%;
-  }
-  
-  .footer {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* overflow:auto; */
+  /* position:fixed; */
+}
+
+div {
+  display: block;
+}
+header {
     background-color:cadetblue;
-    color: white;
-    padding: 40px;
-  }
+    height: 120px;
+    padding: 30px;
+    display:flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+header h1 {
+  display: flex;
+  font-size: 48px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* float:left; */
+  flex: start;
+  color:white; 
+}
+nav {
+  background-color: #818181;
+  justify-content: flex-end;
+  display: flex;
+  padding: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+  display: flex;
+  padding:5px;
+  list-style-type: square;
+}
+
+ul a {
+  display:flex;
+  margin:8px 30px 10px 30px;
+  justify-content: flex-end;
+  color:white;
+  font-size:xx-large;
+}
+
+.image {
+  width: 100%;
+  background-image: url(.\assets\images\20201006_184519wilm20wc.jpg);
+  background-color: mediumpurple;
+  height: 500px;
+  background-position:100% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container {
+  width:100%;
+}
+
+.sidenav {
+  height: 75%; 
+  width: 180px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; 
+  top: 25; /* Stay at the top */
+  left: 0;
+  background-color:#818181; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow: auto;
+  padding-top: 20px;
+  border: 2px;
+  border-color: white;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 50px 12px 50px 18px;
+  text-decoration: none;
+  font-size: 25px;
+  color:white;
+  display: block;
+}
+
+p {
+  font-size:larger;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#818181;
+  background-color:thistle;
+  padding: 50px;
+  display:flex;
+  /* flex-wrap:wrap-reverse; */
+  text-align: right;
+  justify-content: flex-end;
+  width: 100%;
+  /* margin-left: 25px;
+  margin-right: 10px; */
+  margin-top: 0;
   
-  /* #sidebar, #content {
-      height: 100%;
-      overflow: auto;
-      float: left;
-      transition: width .35s;
-      border: solid 2px black;
-  }
-  #sidebar {
-      background-color: beige;
-      width: 30%;
-  } */
+}
+
+.footer {
+  background-color:cadetblue;
+  color: white;
+  padding: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
